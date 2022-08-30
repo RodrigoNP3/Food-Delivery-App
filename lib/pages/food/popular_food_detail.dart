@@ -1,6 +1,7 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:food_delivery_v0/controllers/cart_controller.dart';
 import 'package:food_delivery_v0/controllers/popular_product_controller.dart';
 import 'package:food_delivery_v0/pages/home/main_food_page.dart';
 import 'package:food_delivery_v0/utils/app_constants.dart';
@@ -24,7 +25,8 @@ class PopularFoodDetail extends StatelessWidget {
   Widget build(BuildContext context) {
     var product =
         Get.find<PopularProductController>().popularProductList[pageId];
-    Get.find<PopularProductController>().initProduct();
+    Get.find<PopularProductController>()
+        .initProduct(product, Get.find<CartController>());
     return Scaffold(
       backgroundColor: Colors.white,
       body: Stack(
@@ -140,7 +142,7 @@ class PopularFoodDetail extends StatelessWidget {
                           child:
                               Icon(Icons.remove, color: AppColors.signColor)),
                       SizedBox(width: Dimentions.width10 / 2),
-                      BigText(text: popularProduct.quantity.toString()),
+                      BigText(text: popularProduct.inCartItems.toString()),
                       SizedBox(width: Dimentions.width10 / 2),
                       GestureDetector(
                         onTap: () {
@@ -162,9 +164,15 @@ class PopularFoodDetail extends StatelessWidget {
                     color: AppColors.mainColor,
                     borderRadius: BorderRadius.circular(Dimentions.radius20),
                   ),
-                  child: BigText(
-                    text: '\$${product.price} | Add to Cart',
-                    color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () {
+                      print('add to cart clicked');
+                      popularProduct.addItem(product);
+                    },
+                    child: BigText(
+                      text: '\$${product.price} | Add to Cart',
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ],
