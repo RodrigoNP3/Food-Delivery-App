@@ -1,0 +1,10 @@
+^C:\USERS\RODRI\DEVELOPMENT\PROJECTS\FLUTTER E-COMMERCE APP WITH BACKEND\FOOD_DELIVERY_V0\BUILD\WINDOWS\CMAKEFILES\D5BEA108EF591DE4C8128EF4E0681FD2\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

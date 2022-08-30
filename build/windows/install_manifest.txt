@@ -1,0 +1,14 @@
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/data/icudtl.dat
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/flutter_windows.dll
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/data/flutter_assets/assets/fonts/Roboto-Black.ttf
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/data/flutter_assets/assets/fonts/Roboto-Bold.ttf
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/data/flutter_assets/assets/fonts/Roboto-Medium.ttf
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/data/flutter_assets/assets/fonts/Roboto-Regular.ttf
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/data/flutter_assets/assets/image/food0.png
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/data/flutter_assets/assets/image/food1.png
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/Users/rodri/Development/projects/Flutter E-commerce App With Backend/food_delivery_v0/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf

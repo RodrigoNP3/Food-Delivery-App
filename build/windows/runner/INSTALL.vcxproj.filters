@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rodri\Development\projects\Flutter E-commerce App With Backend\food_delivery_v0\build\windows\CMakeFiles\1ff6a70e137f69de4166fd2a631715d3\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1E8FED2B-DBD5-38DE-BDB0-9752867E9CB8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
