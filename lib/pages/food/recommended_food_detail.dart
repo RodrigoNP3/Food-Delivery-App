@@ -54,6 +54,7 @@ class RecommendedFoodDetail extends StatelessWidget {
                 width: double.maxFinite,
                 child: Center(
                   child: BigText(
+                    //888
                     text: product.name!,
                     size: Dimentions.font26,
                   ),
