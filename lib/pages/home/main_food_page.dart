@@ -3,7 +3,10 @@ import 'package:food_delivery_v0/pages/home/food_page_body.dart';
 import 'package:food_delivery_v0/utils/dimentions.dart';
 import 'package:food_delivery_v0/widgets/big_text.dart';
 import 'package:food_delivery_v0/widgets/small_text.dart';
+import '../../controllers/cart_controller.dart';
+import '../../controllers/popular_product_controller.dart';
 import '/utils/colors.dart';
+import 'package:get/get.dart';
 
 class MainFoodPage extends StatefulWidget {
   const MainFoodPage({Key? key}) : super(key: key);
@@ -15,6 +18,7 @@ class MainFoodPage extends StatefulWidget {
 class _MainFoodPageState extends State<MainFoodPage> {
   @override
   Widget build(BuildContext context) {
+    Get.find<PopularProductController>();
     print(
         'Current height is ${MediaQuery.of(context).size.height.toString()} X ${MediaQuery.of(context).size.width.toString()}');
     return Scaffold(
@@ -69,7 +73,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
             ),
           ),
           //Showing the body
-          Expanded(
+          const Expanded(
             child: SingleChildScrollView(
               child: FoodPageBody(),
             ),
