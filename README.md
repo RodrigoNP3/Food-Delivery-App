@@ -4,13 +4,8 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This app is being developed from a sequence of classes available on youtube, 
+DBestTech channel: https://www.youtube.com/c/dbestech
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Tutorial's Links:
+https://www.youtube.com/playlist?list=PL3nPgdhXQtHfgtMpD_0EvJm-8LP3uNfc-

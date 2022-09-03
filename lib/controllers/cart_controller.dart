@@ -1,3 +1,5 @@
+// import 'dart:html';
+
 import 'package:food_delivery_v0/models/cart_model.dart';
 import 'package:food_delivery_v0/models/product_model.dart';
 import 'package:get/get.dart';
@@ -13,6 +15,8 @@ class CartController extends GetxController {
   Map<int, CartModel> _items = {};
 
   Map<int, CartModel> get items => _items;
+//for storage and sharedpreferences
+  List<CartModel> storageItems = [];
 
   void addItem(ProductModel product, int quantity) {
     var totalQuantity = 0;
@@ -59,6 +63,7 @@ class CartController extends GetxController {
         Get.snackbar(
             'Item Count', 'You should at least add an item in the cart');
       }
+      cartRepo.addToCartList(getItems);
       update();
     }
   }
@@ -102,5 +107,29 @@ class CartController extends GetxController {
       total += (value.quantity! * value.price!);
     });
     return total;
+  }
+
+  List<CartModel> getCartData() {
+    // storageItems = [];
+    setCart = cartRepo.getCartList();
+    return storageItems;
+  }
+
+  set setCart(List<CartModel> items) {
+    storageItems = items;
+    // print('The lenght of the cart items is: ${storageItems.length.toString()}');
+    for (int i = 0; i < storageItems.length; i++) {
+      _items.putIfAbsent(storageItems[i].product!.id!, () => storageItems[i]);
+    }
+  }
+
+  void addToHistory() {
+    cartRepo.addToCartHistoryList();
+    clear();
+  }
+
+  void clear() {
+    _items = {};
+    update();
   }
 }
