@@ -71,6 +71,8 @@ flutter:
     - assets/image/food1.png
     - assets/image/logo part 1.png
     - assets/image/logo part 2.png
+    - assets/image/empty_cart.png
+    - assets/image/empty_box.png
     
     # - assets/image/a_dot_ham.jpeg
 
