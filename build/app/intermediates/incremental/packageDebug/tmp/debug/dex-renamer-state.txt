@@ -1,4 +1,4 @@
-#Sat Sep 03 15:10:46 GFT 2022
+#Sat Sep 03 17:53:11 GFT 2022
 base.0=C\:\\Users\\rodri\\Development\\projects\\Flutter_E-commerce_App_With_Backend\\food_delivery_v0\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

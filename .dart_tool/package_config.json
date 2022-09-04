@@ -98,6 +98,12 @@
       "languageVersion": "2.15"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///C:/Users/rodri/Development/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "js",
       "rootUri": "file:///C:/Users/rodri/Development/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.4",
       "packageUri": "lib/",
@@ -284,7 +290,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-09-02T15:54:09.547870Z",
+  "generated": "2022-09-04T00:20:16.889295Z",
   "generator": "pub",
   "generatorVersion": "2.17.6"
 }
