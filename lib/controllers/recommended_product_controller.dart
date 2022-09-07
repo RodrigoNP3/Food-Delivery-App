@@ -27,7 +27,7 @@ class RecommendedProductController extends GetxController {
       print('got products recommended');
       _recommendedProductList = [];
       _recommendedProductList.addAll(Product.fromJson(response.body).products);
-      // print(_popularProductList.toString());
+
       _isLoaded = true;
       update(); //it's equivalent to notifyListeners
     } else {
