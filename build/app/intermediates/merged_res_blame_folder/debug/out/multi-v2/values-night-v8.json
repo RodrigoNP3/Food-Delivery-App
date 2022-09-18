@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\rodri\\Development\\projects\\Flutter_E-commerce_App_With_Backend\\food_delivery_v0\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "D:\\Users\\Rodrigo\\Development\\projects\\Food-Delivery-App\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rodri\\Development\\projects\\Flutter_E-commerce_App_With_Backend\\food_delivery_v0\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\Users\\Rodrigo\\Development\\projects\\Food-Delivery-App\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

@@ -11,10 +11,10 @@ class ApiClient extends GetConnect implements GetxService {
     baseUrl = appBaseUrl;
     timeout = const Duration(seconds: 30);
     token = AppConstants.TOKEN;
-    // _mainHeaders = {
-    //   'Content-type': 'application/json; charset=UTF-8',
-    //   'Authorization': 'Bearer $token',
-    // };
+    _mainHeaders = {
+      'Content-type': 'application/json; charset=UTF-8',
+      'Authorization': 'Bearer $token',
+    };
   }
 
   void updateHeader(String token) {
@@ -37,14 +37,14 @@ class ApiClient extends GetConnect implements GetxService {
   }
 
   Future<Response> postData(String uri, dynamic body) async {
-    print('ROLA ROLA ROLA ROLA ROLA ROLA${body.toString()}');
+    print('${body.toString()}');
     try {
       Response response = await post(uri, body, headers: _mainHeaders);
       // print('Api cliente post data response: ${response.statusCode}');
-      print('ROLA ROLA ROLA ${response.toString()}');
+      print('postaData: ${response.body.toString()}');
       return response;
     } catch (e) {
-      print(e.toString());
+      print('DEU ERRO CARAIO: ${e.toString()}');
       return Response(statusCode: 1, statusText: e.toString());
     }
   }

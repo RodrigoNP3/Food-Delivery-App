@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_v0/utils/colors.dart';
 import 'package:food_delivery_v0/utils/dimentions.dart';
 import 'package:food_delivery_v0/widgets/account_widget.dart';
-import 'package:food_delivery_v0/widgets/app_column.dart';
+
 import 'package:food_delivery_v0/widgets/app_icon.dart';
 import 'package:food_delivery_v0/widgets/big_text.dart';
 
