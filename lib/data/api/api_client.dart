@@ -24,14 +24,14 @@ class ApiClient extends GetConnect implements GetxService {
     };
   }
 
-  Future<Response> getData(String url) async {
+  Future<Response> getData(String url, {Map<String, String>? headers}) async {
     try {
-      Response response = await get(url);
-      print(
-          'api_cliente response status code: ${response.statusCode.toString()}');
+      Response response = await get(
+        url,
+        headers: headers ?? _mainHeaders,
+      );
       return response;
     } catch (e) {
-      print('api_client: ${e.toString()}');
       return Response(statusCode: 1, statusText: e.toString());
     }
   }
