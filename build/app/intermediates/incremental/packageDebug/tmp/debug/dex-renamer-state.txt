@@ -1,4 +1,4 @@
-#Sun Sep 18 19:53:19 GFT 2022
+#Wed Sep 21 14:40:28 GFT 2022
 base.0=D\:\\Users\\Rodrigo\\Development\\projects\\Food-Delivery-App\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

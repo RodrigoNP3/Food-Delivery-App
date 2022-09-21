@@ -1,26 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_v0/base/custom_loader.dart';
-import 'package:food_delivery_v0/controllers/cart_controller.dart';
-import 'package:food_delivery_v0/controllers/user_controller.dart';
-import 'package:food_delivery_v0/pages/auth/auth_controller.dart';
-import 'package:food_delivery_v0/routes/route_helper.dart';
 import 'package:food_delivery_v0/utils/colors.dart';
 import 'package:food_delivery_v0/utils/dimentions.dart';
 import 'package:food_delivery_v0/widgets/account_widget.dart';
 
 import 'package:food_delivery_v0/widgets/app_icon.dart';
 import 'package:food_delivery_v0/widgets/big_text.dart';
-import 'package:get/get.dart';
 
 class AccountPage extends StatelessWidget {
   const AccountPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    bool _userLoggedIn = Get.find<AuthController>().userLoggedIn();
-    if (_userLoggedIn) {
-      Get.find<UserController>().getUserInfo();
-    }
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.mainColor,
@@ -30,139 +20,112 @@ class AccountPage extends StatelessWidget {
           color: Colors.white,
         ),
       ),
-      body: GetBuilder<UserController>(
-        builder: (userController) {
-          return _userLoggedIn
-              ? (userController.isLoading
-                  ? Container(
-                      width: double.maxFinite,
-                      margin: EdgeInsets.only(top: Dimentions.height20),
-                      child: Column(
-                        children: [
-                          //Profille icon
-                          AppIcon(
-                            icon: Icons.person,
-                            backGroundColor: AppColors.mainColor,
-                            iconColor: Colors.white,
-                            iconSize: Dimentions.height15 * 5,
-                            size: Dimentions.height15 * 10,
-                          ),
-                          SizedBox(height: Dimentions.height20),
-                          Expanded(
-                            child: SingleChildScrollView(
-                              child: Column(
-                                children: [
-                                  //Name
-                                  AccountWidget(
-                                    appIcon: AppIcon(
-                                      icon: Icons.person,
-                                      backGroundColor: AppColors.mainColor,
-                                      iconColor: Colors.white,
-                                      iconSize: Dimentions.height10 * 5 / 2,
-                                      size: Dimentions.height10 * 5,
-                                    ),
-                                    bigText: BigText(
-                                      text: userController.userModel.email,
-                                    ),
-                                  ),
-                                  SizedBox(height: Dimentions.height20),
-                                  //Phone
-                                  AccountWidget(
-                                    appIcon: AppIcon(
-                                      icon: Icons.phone,
-                                      backGroundColor: AppColors.yellowColor,
-                                      iconColor: Colors.white,
-                                      iconSize: Dimentions.height10 * 5 / 2,
-                                      size: Dimentions.height10 * 5,
-                                    ),
-                                    bigText: BigText(
-                                      text: 'userController.userModel.phone',
-                                    ),
-                                  ),
-                                  SizedBox(height: Dimentions.height20),
-                                  //Email
-                                  AccountWidget(
-                                    appIcon: AppIcon(
-                                      icon: Icons.email,
-                                      backGroundColor: AppColors.yellowColor,
-                                      iconColor: Colors.white,
-                                      iconSize: Dimentions.height10 * 5 / 2,
-                                      size: Dimentions.height10 * 5,
-                                    ),
-                                    bigText: BigText(
-                                      text: 'userController.userModel.email',
-                                    ),
-                                  ),
-                                  SizedBox(height: Dimentions.height20),
-                                  //Address
-                                  AccountWidget(
-                                    appIcon: AppIcon(
-                                      icon: Icons.location_on,
-                                      backGroundColor: AppColors.yellowColor,
-                                      iconColor: Colors.white,
-                                      iconSize: Dimentions.height10 * 5 / 2,
-                                      size: Dimentions.height10 * 5,
-                                    ),
-                                    bigText: BigText(
-                                      text: 'Recife - Pernambuco',
-                                    ),
-                                  ),
-                                  SizedBox(height: Dimentions.height20),
-                                  //Message
-                                  AccountWidget(
-                                    appIcon: AppIcon(
-                                      icon: Icons.message_outlined,
-                                      backGroundColor: Colors.redAccent,
-                                      iconColor: Colors.white,
-                                      iconSize: Dimentions.height10 * 5 / 2,
-                                      size: Dimentions.height10 * 5,
-                                    ),
-                                    bigText: BigText(
-                                      text: 'Messages',
-                                    ),
-                                  ),
-                                  SizedBox(height: Dimentions.height20),
-                                  GestureDetector(
-                                    onTap: () {
-                                      if (Get.find<AuthController>()
-                                          .userLoggedIn()) {
-                                        Get.find<AuthController>()
-                                            .clearSharedData();
-                                        Get.find<CartController>().clear();
-                                        Get.find<CartController>()
-                                            .clearCartHistory();
-                                        Get.toNamed(
-                                            RouteHelper.getSignInPage());
-                                      }
-                                      null;
-                                    },
-                                    child: AccountWidget(
-                                      appIcon: AppIcon(
-                                        icon: Icons.logout,
-                                        backGroundColor: Colors.redAccent,
-                                        iconColor: Colors.white,
-                                        iconSize: Dimentions.height10 * 5 / 2,
-                                        size: Dimentions.height10 * 5,
-                                      ),
-                                      bigText: BigText(
-                                        text: 'Logout',
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
+      body: Container(
+        width: double.maxFinite,
+        margin: EdgeInsets.only(top: Dimentions.height20),
+        child: Column(
+          children: [
+            //Profille icon
+            AppIcon(
+              icon: Icons.person,
+              backGroundColor: AppColors.mainColor,
+              iconColor: Colors.white,
+              iconSize: Dimentions.height15 * 5,
+              size: Dimentions.height15 * 10,
+            ),
+            SizedBox(height: Dimentions.height20),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    //Name
+                    AccountWidget(
+                      appIcon: AppIcon(
+                        icon: Icons.person,
+                        backGroundColor: AppColors.mainColor,
+                        iconColor: Colors.white,
+                        iconSize: Dimentions.height10 * 5 / 2,
+                        size: Dimentions.height10 * 5,
                       ),
-                    )
-                  : const CustomLoader())
-              : Container(
-                  child: const Center(
-                    child: Text("You must login"),
-                  ),
-                );
-        },
+                      bigText: BigText(
+                        text: 'Rodrigo',
+                      ),
+                    ),
+                    SizedBox(height: Dimentions.height20),
+                    //Phone
+                    AccountWidget(
+                      appIcon: AppIcon(
+                        icon: Icons.phone,
+                        backGroundColor: AppColors.yellowColor,
+                        iconColor: Colors.white,
+                        iconSize: Dimentions.height10 * 5 / 2,
+                        size: Dimentions.height10 * 5,
+                      ),
+                      bigText: BigText(
+                        text: '81 99813859',
+                      ),
+                    ),
+                    SizedBox(height: Dimentions.height20),
+                    //Email
+                    AccountWidget(
+                      appIcon: AppIcon(
+                        icon: Icons.email,
+                        backGroundColor: AppColors.yellowColor,
+                        iconColor: Colors.white,
+                        iconSize: Dimentions.height10 * 5 / 2,
+                        size: Dimentions.height10 * 5,
+                      ),
+                      bigText: BigText(
+                        text: 'rodrigo_np@outlook.com',
+                      ),
+                    ),
+                    SizedBox(height: Dimentions.height20),
+                    //Address
+                    AccountWidget(
+                      appIcon: AppIcon(
+                        icon: Icons.location_on,
+                        backGroundColor: AppColors.yellowColor,
+                        iconColor: Colors.white,
+                        iconSize: Dimentions.height10 * 5 / 2,
+                        size: Dimentions.height10 * 5,
+                      ),
+                      bigText: BigText(
+                        text: 'Recife - Pernambuco',
+                      ),
+                    ),
+                    SizedBox(height: Dimentions.height20),
+                    //Message
+                    AccountWidget(
+                      appIcon: AppIcon(
+                        icon: Icons.message_outlined,
+                        backGroundColor: Colors.redAccent,
+                        iconColor: Colors.white,
+                        iconSize: Dimentions.height10 * 5 / 2,
+                        size: Dimentions.height10 * 5,
+                      ),
+                      bigText: BigText(
+                        text: 'Message',
+                      ),
+                    ),
+                    SizedBox(height: Dimentions.height20),
+                    AccountWidget(
+                      appIcon: AppIcon(
+                        icon: Icons.person,
+                        backGroundColor: AppColors.mainColor,
+                        iconColor: Colors.white,
+                        iconSize: Dimentions.height10 * 5 / 2,
+                        size: Dimentions.height10 * 5,
+                      ),
+                      bigText: BigText(
+                        text: 'Rodrigo',
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

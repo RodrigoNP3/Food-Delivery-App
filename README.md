@@ -1,11 +1,142 @@
-# food_delivery_v0
+# Food Delivery App
 
-A new Flutter project.
+Hello there!
+This is a simple shop app developed in flutter.
+In this app each user can create your own products so other users can order it. 
+The database was developed using Google Firebase.
 
-## Getting Started
+This app was developed according to the classes of:
 
-This app is being developed from a sequence of classes available on youtube, 
-DBestTech channel: https://www.youtube.com/c/dbestech
-
-Tutorial's Links:
 https://www.youtube.com/playlist?list=PL3nPgdhXQtHfgtMpD_0EvJm-8LP3uNfc-
+Flutter E-commerce App Tutorial | Shop App | Food Delivery - dbestech Youtube Chanel;
+
+### Versions
+
+- **Flutter**: 3.0.5
+- **Dart**: 2.17.6
+
+### Setup
+
+Clone it in your machine:
+```bash
+git clone https://github.com/RodrigoNP3/Simple-Shop-App.git
+```
+
+Dependecies:
+
+```bash
+dependencies:
+  cupertino_icons: ^1.0.2
+  get: ^4.1.4
+  dots_indicator: ^2.1.0
+  shared_preferences: ^2.0.15
+  intl: ^0.17.0
+```
+
+### Navigation
+
+<table>
+<thead>
+<tr>
+<th align="center">Sign In Page</th>
+<th align="center">Sign Up Page</th>
+<th align="center">Home Page</th>
+<th align="center">Home Page</th>
+
+
+</tr>
+</thead>
+<tbody>
+<tr>
+  
+<td align="center">
+  <a target="_blank" rel="" href="images/Sign _In_Page.jpg">
+        <img src="images/Sign _In_Page.jpg" alt="Css Logo" with="200" height="400"/>
+
+  </a></td>
+  
+<td align="center">
+  <a target="_blank" rel="" href="images/Sign _Up_Page.jpg">
+        <img src="images/Sign _Up_Page.jpg" alt="Css Logo" with="200" height="400"/>
+
+  </a></td>
+  
+  
+<td align="center">
+  <a target="_blank" rel="" href="images/Home_Page_1.jpg">
+        <img src="images/Home_Page_1.jpg" alt="Css Logo" with="200" height="400"/>
+
+  </a></td>
+  
+  
+<td align="center">
+  <a target="_blank" rel="" href="images/Home_Page_2.jpg">
+        <img src="images/Home_Page_2.jpg" alt="Css Logo" with="200" height="400"/>
+
+  </a></td>
+  
+  
+  <table>
+<thead>
+<tr>
+
+<th align="center">Popular Food Detail Page</th>
+  <th align="center">Recommended Food Detail Page</th>
+    <th align="center">Cart Page</th>
+        <th align="center">Cart History Page</th>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+  
+
+  
+  <td align="center">
+  <a target="_blank" rel="" href="images/Popular_Food_Detail_Page.jpg">
+        <img src="images/Popular_Food_Detail_Page.jpg" alt="Css Logo" with="200" height="400"/>
+
+  </a></td>
+    <td align="center">
+  <a target="_blank" rel="" href="images/Recommended_Food_Detail_Page.jpg">
+        <img src="images/Recommended_Food_Detail_Page.jpg" alt="Css Logo" with="200" height="400"/>
+
+  </a></td>
+  <td align="center">
+  <a target="_blank" rel="" href="images/Cart_Page.jpg">
+        <img src="images/OCart_Page.jpg" alt="Css Logo" with="200" height="400"/>
+
+  </a></td>
+    <td align="center">
+  <a target="_blank" rel="" href="images/Cart_History_Page.jpg">
+        <img src="images/Cart_History_Page.jpg" alt="Css Logo" with="200" height="400"/>
+
+  </a></td>
+  
+  <!-- <table>
+<thead>
+<tr>
+<th align="center">Add Product Screen</th>
+
+
+
+</tr>
+</thead>
+<tbody>
+<tr>
+  
+<td align="center">
+  <a target="_blank" rel="" href="images/ADD_PRODUCT.jpg">
+        <img src="images/ADD_PRODUCT.jpg" alt="Css Logo" with="200" height="400"/>
+
+  </a></td>
+   -->
+
+  
+  
+
+  
+  
+  
+ 
+  
