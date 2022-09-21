@@ -1,11 +1,9 @@
 # Food Delivery App
 
 Hello there!
-This is a simple shop app developed in flutter.
-In this app each user can create your own products so other users can order it. 
-The database was developed using Google Firebase.
+This is a food delivery app developed in flutter.
 
-This app was developed according to the classes of:
+This application is being developed according to the classes of:
 
 https://www.youtube.com/playlist?list=PL3nPgdhXQtHfgtMpD_0EvJm-8LP3uNfc-
 Flutter E-commerce App Tutorial | Shop App | Food Delivery - dbestech Youtube Chanel;
@@ -19,7 +17,7 @@ Flutter E-commerce App Tutorial | Shop App | Food Delivery - dbestech Youtube Ch
 
 Clone it in your machine:
 ```bash
-git clone https://github.com/RodrigoNP3/Simple-Shop-App.git
+git clone https://github.com/RodrigoNP3/Food-Delivery-App.git
 ```
 
 Dependecies:
@@ -104,7 +102,7 @@ dependencies:
   </a></td>
   <td align="center">
   <a target="_blank" rel="" href="images/Cart_Page.png">
-        <img src="images/OCart_Page.png" alt="Css Logo" with="200" height="400"/>
+        <img src="images/Cart_Page.png" alt="Css Logo" with="200" height="400"/>
 
   </a></td>
     <td align="center">
