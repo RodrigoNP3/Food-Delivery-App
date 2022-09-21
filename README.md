@@ -50,28 +50,28 @@ dependencies:
 <tr>
   
 <td align="center">
-  <a target="_blank" rel="" href="images/Sign _In_Page.jpg">
-        <img src="images/Sign _In_Page.jpg" alt="Css Logo" with="200" height="400"/>
+  <a target="_blank" rel="" href="images/Sign _In_Page.png">
+        <img src="images/Sign _In_Page.png" alt="Css Logo" with="200" height="400"/>
 
   </a></td>
   
 <td align="center">
-  <a target="_blank" rel="" href="images/Sign _Up_Page.jpg">
-        <img src="images/Sign _Up_Page.jpg" alt="Css Logo" with="200" height="400"/>
-
-  </a></td>
-  
-  
-<td align="center">
-  <a target="_blank" rel="" href="images/Home_Page_1.jpg">
-        <img src="images/Home_Page_1.jpg" alt="Css Logo" with="200" height="400"/>
+  <a target="_blank" rel="" href="images/Sign _Up_Page.png">
+        <img src="images/Sign _Up_Page.png" alt="Css Logo" with="200" height="400"/>
 
   </a></td>
   
   
 <td align="center">
-  <a target="_blank" rel="" href="images/Home_Page_2.jpg">
-        <img src="images/Home_Page_2.jpg" alt="Css Logo" with="200" height="400"/>
+  <a target="_blank" rel="" href="images/Home_Page_1.png">
+        <img src="images/Home_Page_1.png" alt="Css Logo" with="200" height="400"/>
+
+  </a></td>
+  
+  
+<td align="center">
+  <a target="_blank" rel="" href="images/Home_Page_2.png">
+        <img src="images/Home_Page_2.png" alt="Css Logo" with="200" height="400"/>
 
   </a></td>
   
@@ -93,23 +93,23 @@ dependencies:
 
   
   <td align="center">
-  <a target="_blank" rel="" href="images/Popular_Food_Detail_Page.jpg">
-        <img src="images/Popular_Food_Detail_Page.jpg" alt="Css Logo" with="200" height="400"/>
+  <a target="_blank" rel="" href="images/Popular_Food_Detail_Page.png">
+        <img src="images/Popular_Food_Detail_Page.png" alt="Css Logo" with="200" height="400"/>
 
   </a></td>
     <td align="center">
-  <a target="_blank" rel="" href="images/Recommended_Food_Detail_Page.jpg">
-        <img src="images/Recommended_Food_Detail_Page.jpg" alt="Css Logo" with="200" height="400"/>
+  <a target="_blank" rel="" href="images/Recommended_Food_Detail_Page.png">
+        <img src="images/Recommended_Food_Detail_Page.png" alt="Css Logo" with="200" height="400"/>
 
   </a></td>
   <td align="center">
-  <a target="_blank" rel="" href="images/Cart_Page.jpg">
-        <img src="images/OCart_Page.jpg" alt="Css Logo" with="200" height="400"/>
+  <a target="_blank" rel="" href="images/Cart_Page.png">
+        <img src="images/OCart_Page.png" alt="Css Logo" with="200" height="400"/>
 
   </a></td>
     <td align="center">
-  <a target="_blank" rel="" href="images/Cart_History_Page.jpg">
-        <img src="images/Cart_History_Page.jpg" alt="Css Logo" with="200" height="400"/>
+  <a target="_blank" rel="" href="images/Cart_History_Page.png">
+        <img src="images/Cart_History_Page.png" alt="Css Logo" with="200" height="400"/>
 
   </a></td>
   
@@ -126,8 +126,8 @@ dependencies:
 <tr>
   
 <td align="center">
-  <a target="_blank" rel="" href="images/ADD_PRODUCT.jpg">
-        <img src="images/ADD_PRODUCT.jpg" alt="Css Logo" with="200" height="400"/>
+  <a target="_blank" rel="" href="images/ADD_PRODUCT.png">
+        <img src="images/ADD_PRODUCT.png" alt="Css Logo" with="200" height="400"/>
 
   </a></td>
    -->
