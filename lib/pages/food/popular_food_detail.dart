@@ -1,10 +1,6 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:food_delivery_v0/controllers/cart_controller.dart';
 import 'package:food_delivery_v0/controllers/popular_product_controller.dart';
-import 'package:food_delivery_v0/pages/cart/cart_page.dart';
-import 'package:food_delivery_v0/pages/home/main_food_page.dart';
 import 'package:food_delivery_v0/utils/app_constants.dart';
 import 'package:food_delivery_v0/utils/colors.dart';
 import 'package:food_delivery_v0/utils/dimentions.dart';
@@ -220,7 +216,8 @@ class PopularFoodDetail extends StatelessWidget {
                       borderRadius: BorderRadius.circular(Dimentions.radius20),
                     ),
                     child: BigText(
-                      text: '\$${product.price} | Add to Cart',
+                      text:
+                          '\$${product.price * popularProduct.inCartItems} | Add to Cart',
                       color: Colors.white,
                     ),
                   ),

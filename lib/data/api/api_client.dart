@@ -1,37 +1,39 @@
 import 'package:food_delivery_v0/utils/app_constants.dart';
 import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ApiClient extends GetConnect implements GetxService {
   late String token;
   final String appBaseUrl;
+  late SharedPreferences sharedPreferences;
 
   late Map<String, String> _mainHeaders;
 
-  ApiClient({required this.appBaseUrl}) {
+  ApiClient({required this.appBaseUrl, required this.sharedPreferences}) {
     baseUrl = appBaseUrl;
     timeout = const Duration(seconds: 30);
-    token = AppConstants.TOKEN;
+    token = sharedPreferences.getString(AppConstants.TOKEN_PATH) ?? '';
     _mainHeaders = {
-      'Content-type': 'application/json; charset=UTF-8',
+      'Accept': 'application/json; charset=UTF-8',
       'Authorization': 'Bearer $token',
     };
   }
 
   void updateHeader(String token) {
     _mainHeaders = {
-      'Content-type': 'application/json; charset=UTF-8',
+      'Accept': 'application/json; charset=UTF-8',
       'Authorization': 'Bearer $token',
     };
   }
 
-  Future<Response> getData(String url) async {
+  Future<Response> getData(String url, {Map<String, String>? headers}) async {
     try {
-      Response response = await get(url);
-      print(
-          'api_cliente response status code: ${response.statusCode.toString()}');
+      Response response = await get(
+        url,
+        headers: headers ?? _mainHeaders,
+      );
       return response;
     } catch (e) {
-      print('api_client: ${e.toString()}');
       return Response(statusCode: 1, statusText: e.toString());
     }
   }

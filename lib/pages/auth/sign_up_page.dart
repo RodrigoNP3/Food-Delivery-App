@@ -73,7 +73,7 @@ class SignUpPage extends StatelessWidget {
     }
 
     return Scaffold(
-      // backgroundColor: const Color.fromARGB(255, 233, 192, 192),
+      backgroundColor: const Color.fromARGB(255, 233, 192, 192),
       body: GetBuilder<AuthController>(
         builder: (_authController) {
           return !_authController.isLoading

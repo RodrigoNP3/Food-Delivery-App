@@ -33,21 +33,19 @@ class AuthController extends GetxController implements Service {
   }
 
   Future<ResponseModel> login(String email, String password) async {
-    print('Gerting User Token');
-    print(authRepo.getUserToken().toString());
     _isLoading = true;
+
     update();
+
     Response response = await authRepo.login(email, password);
-    print('response ${response.statusCode.toString()}');
+
     late ResponseModel responseModel;
 
     if (response.statusCode == 200) {
-      print('Backend token 3');
       authRepo.saveUserToken(response.body['token']);
-      print('TOKEN: ${response.body['token'].toString()}');
+      print('My token is: ${response.body['token']}');
       responseModel = ResponseModel(true, response.body['token']);
     } else {
-      print('Backend token 4');
       responseModel = ResponseModel(false, response.statusText!);
     }
 
@@ -58,5 +56,13 @@ class AuthController extends GetxController implements Service {
 
   void saveUserNumberAndPassword(String number, String password) {
     authRepo.saveUserNumberAndPassword(number, password);
+  }
+
+  bool userLoggedIn() {
+    return authRepo.userLoggedIn();
+  }
+
+  bool clearSharedData() {
+    return authRepo.clearSharedData();
   }
 }

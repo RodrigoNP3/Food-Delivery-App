@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_v0/base/no_data_page.dart';
 import 'package:food_delivery_v0/controllers/cart_controller.dart';
 import 'package:food_delivery_v0/controllers/popular_product_controller.dart';
+import 'package:food_delivery_v0/pages/auth/auth_controller.dart';
 import 'package:food_delivery_v0/pages/home/main_food_page.dart';
 import 'package:food_delivery_v0/utils/app_constants.dart';
 import 'package:food_delivery_v0/utils/colors.dart';
@@ -78,7 +79,7 @@ class CartPage extends StatelessWidget {
                               itemCount: _cartList.length,
                               itemBuilder: (_, index) {
                                 return Container(
-                                  height: (Dimentions.height20 * 5),
+                                  height: Dimentions.height20 * 5,
                                   width: double.maxFinite,
                                   child: Row(
                                     children: [
@@ -114,8 +115,8 @@ class CartPage extends StatelessWidget {
                                           }
                                         },
                                         child: Container(
-                                          width: Dimentions.height20 * 5 - 5,
-                                          height: Dimentions.height20 * 5 - 5,
+                                          width: Dimentions.height20 * 5,
+                                          height: Dimentions.height20 * 5,
                                           margin: EdgeInsets.only(
                                               bottom: Dimentions.height10),
                                           decoration: BoxDecoration(
@@ -281,9 +282,11 @@ class CartPage extends StatelessWidget {
                       ),
                       GestureDetector(
                         onTap: () {
-                          // popularProduct.addItem(product);
-                          print('checkout clicked');
-                          CartController.addToHistory();
+                          if (Get.find<AuthController>().userLoggedIn()) {
+                            CartController.addToHistory();
+                          } else {
+                            Get.toNamed(RouteHelper.getSignInPage());
+                          }
                         },
                         child: Container(
                           padding: EdgeInsets.only(

@@ -102,7 +102,7 @@ class CartHistory extends StatelessWidget {
                                     i < cartItemsPerOrder.length;
                                     i++)
                                   Container(
-                                    height: (Dimentions.height30 * 4) + 3,
+                                    height: Dimentions.height30 * 4,
                                     child: Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
