@@ -19,7 +19,11 @@ class AuthRepo {
   }
 
   bool userLoggedIn() {
-    return sharedPreferences.containsKey(AppConstants.TOKEN_PATH);
+    bool isNotEmpty =
+        sharedPreferences.getString(AppConstants.TOKEN_PATH) != '';
+    return isNotEmpty
+        ? sharedPreferences.containsKey(AppConstants.TOKEN_PATH)
+        : false;
   }
 
   Future<String> getUserToken() async {

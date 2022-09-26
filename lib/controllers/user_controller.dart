@@ -13,7 +13,7 @@ class UserController extends GetxController implements Service {
     required this.userRepo,
   });
 
-  bool _isLoading = false;
+  bool _isLoading = true;
   late UserModel _userModel;
   bool get isLoading => _isLoading;
   UserModel get userModel => _userModel;
@@ -24,7 +24,7 @@ class UserController extends GetxController implements Service {
     if (response.statusCode == 200) {
       print(response.body);
       _userModel = UserModel.fromJson(response.body);
-      _isLoading = true;
+      // _isLoading = true;
       responseModel = ResponseModel(true, 'Successfully');
     } else {
       responseModel = ResponseModel(false, response.statusText!);

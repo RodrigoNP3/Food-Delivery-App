@@ -1,3 +1,4 @@
+import 'package:food_delivery_v0/pages/address/add_address_page.dart';
 import 'package:food_delivery_v0/pages/auth/sign_in_page.dart';
 import 'package:food_delivery_v0/pages/food/popular_food_detail.dart';
 import 'package:food_delivery_v0/pages/home/main_food_page.dart';
@@ -16,6 +17,8 @@ class RouteHelper {
   static const String cartPage = '/cart-page';
   static const String signIn = '/sign-in';
 
+  static const String addAddress = '/add-address';
+
   static String getSplashScreen() => '$splashScreen';
   static String getInitial() => '$initial';
   static String getPopularFood(int pageId, String page) =>
@@ -24,6 +27,8 @@ class RouteHelper {
       '$recommendedFood?pageId=$pageId&page=$page';
   static String getCartPage() => '$cartPage';
   static String getSignInPage() => '$signIn';
+  static String getAddressPage() => '$addAddress';
+
   static List<GetPage> routes = [
     //Splash screen
     GetPage(name: splashScreen, page: () => const SplashScreen()),
@@ -63,5 +68,10 @@ class RouteHelper {
       },
       transition: Transition.fade,
     ),
+    GetPage(
+        name: addAddress,
+        page: () {
+          return const AddAddressPage();
+        })
   ];
 }

@@ -9,6 +9,11 @@ class AppConstants {
   static const String RECOMMENDED_PRODUCT_URI = '/api/v1/products/recommended';
   static const String DRINKS_URI = '/api/v1/products/drinks';
   static const String UPLOAD_URL = '/uploads/';
+  // static const String GEOCODE_URI =
+  //     'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCSQmP0TCIohchTbFD4UQPHkRu7cwPNsGo&latlng=';
+
+  static const String USER_ADDRESS = 'user_address';
+  static const String GEOCODE_URI = '/api/v1/config/geocode-api';
 
   //user and auth endpoints
   static const String REGISTRATION_URI = '/api/v1/auth/register';

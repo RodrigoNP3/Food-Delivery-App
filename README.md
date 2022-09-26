@@ -29,6 +29,9 @@ dependencies:
   dots_indicator: ^2.1.0
   shared_preferences: ^2.0.15
   intl: ^0.17.0
+  google_maps_flutter: ^2.2.0
+  geocoding: ^2.0.5
+  geolocator: ^9.0.2
 ```
 
 ### Navigation
@@ -111,10 +114,10 @@ dependencies:
 
   </a></td>
   
-  <!-- <table>
+<table>
 <thead>
 <tr>
-<th align="center">Add Product Screen</th>
+<th align="center">Add Address Page</th>
 
 
 
@@ -124,11 +127,11 @@ dependencies:
 <tr>
   
 <td align="center">
-  <a target="_blank" rel="" href="images/ADD_PRODUCT.png">
-        <img src="images/ADD_PRODUCT.png" alt="Css Logo" with="200" height="400"/>
+  <a target="_blank" rel="" href="images/add_address_page.png">
+        <img src="images/add_address_page.png" alt="Css Logo" with="200" height="400"/>
 
   </a></td>
-   -->
+
 
   
   
